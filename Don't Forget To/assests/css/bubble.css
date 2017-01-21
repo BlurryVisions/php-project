@@ -1,0 +1,117 @@
+
+/* EMAIL BUBBLE */
+
+.bubble {
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid;
+  position: absolute;
+  border-radius: 3px;
+  border-color: #D3D3D3;
+  padding: 5px;
+  width: 255px;
+  height: 20px;
+  visibility: hidden;
+  opacity: 0;
+  
+  -moz-transition: all 0.218s;
+  -o-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+  top: 55px;
+  left: 85%;
+  
+
+}
+
+.bubble.active {
+
+  visibility: visible;
+  opacity: 1;
+
+}
+
+
+/* bubble arrow */
+
+.bubble-arrow {
+
+  position: absolute;
+  
+
+}
+
+.bubble-arrow:before, .bubble-arrow:after {
+  
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  pointer-events: none;
+
+}
+
+.bubble-arrow:before {
+
+  border: 7px solid;
+  border-color: transparent #000;
+  left: -7px;
+  
+}
+
+.bubble-arrow:after {
+
+  border: 7px solid;
+  border-color: transparent #f5f8fa;
+  left: -7px;
+  
+
+}
+
+.bubble-arrowright {
+
+  top: 7px;
+  left: 0;
+
+}
+
+.bubble-arrowright:before, .bubble-arrowright:after {
+
+  border-left-width: 0;
+
+}
+
+
+/* PASSWORD BUBBLE */
+
+.passbubble {
+
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  border: 1px solid;
+  position: absolute;
+  border-radius: 3px;
+  border-color: #D3D3D3;
+  padding: 5px;
+  width: 255px;
+  height: 20px;
+  visibility: hidden;
+  opacity: 0;
+  
+  -moz-transition: all 0.218s;
+  -o-transition: all 0.218s;
+  -webkit-transition: all 0.218s;
+  transition: all 0.218s;
+  top: 117px;
+  left: 85%;
+  
+
+}
+
+.passbubble.active {
+
+  visibility: visible;
+  opacity: 1;
+
+}
