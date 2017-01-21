@@ -25,7 +25,9 @@
     $persquery->execute();
     $persresults = $persquery->fetchAll(PDO::FETCH_ASSOC);
     $perstotalRows = $persquery->rowCount();
- 
+
+// insert
+
 if ( isset($_POST['work']) ) {
 
     $title = trim($_POST['title']);
@@ -68,6 +70,8 @@ if ( isset($_POST['personal']) ) {
 
 }
 
+//delete
+
 if ( isset($_POST['wdelete']) ) {
 
     $title = $_POST['htitle'];
@@ -95,6 +99,8 @@ if ( isset($_POST['pdelete']) ) {
     $perstotalRows = $persquery->rowCount();
 
 }
+
+// update
 
 if ( isset($_POST['wupdate']) ) {
 
@@ -132,6 +138,8 @@ if ( isset($_POST['pupdate']) ) {
 
 }
 
+//search
+
 $keyword = $_GET['keyword'];
 
 if ( isset($_GET['search']) ) {
@@ -147,6 +155,8 @@ if ( isset($_GET['search']) ) {
     $psearchresults = $psearchquery->fetchAll(PDO::FETCH_ASSOC);
     
 }
+
+// redo
 
 if ( isset($_POST['wredo']) ) {
 
