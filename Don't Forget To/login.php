@@ -17,8 +17,6 @@
 
  if ( isset($_POST['register']) ) {
   
-  // clean user inputs to prevent sql injections
-
   $email = trim($_POST['email']);
   $email = strip_tags($email);
   $email = htmlspecialchars($email);
