@@ -84,7 +84,7 @@ if( $error == false ) {
 
         <form id="cpass" method="POST" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
         
-        <div class="inbetweeen">reset your password..</div>
+        <div class="inbetweeen">reset your password....</div>
         
         <input type="text" placeholder="new password" name="pass1" maxlength="15" required>
         <div class="label"><label><?php echo $totalRows; ?></label></div>
