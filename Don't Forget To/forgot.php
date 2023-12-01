@@ -77,7 +77,7 @@ if( $error == false ) {
 <body>
     
     <div id="header">
-        <h3>don't forget to...</h3>
+        <h3>don't forget to.....</h3>
     </div>
     
     <div class="content">
@@ -97,7 +97,7 @@ if( $error == false ) {
     </div>
     <div class="push"> </div>
     <div id="footer">
-        <h3>don't forget to..</h3>
+        <h3>don't forget to....</h3>
     </div>
        
 </body>
